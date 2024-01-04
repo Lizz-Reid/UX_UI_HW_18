@@ -1,0 +1,248 @@
+body {
+    background-color: #FFF2F2;
+    font-family: 'lora, serif';
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 96.4%;
+    margin-left: 1.8%;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    padding: 1%;
+    text-align: center;
+}
+
+.inline-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.options b {
+    padding-left: 60px;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-style: bold;
+    cursor: pointer;
+  }
+.navigation h4 {
+    width: 50%;
+    font-size: 32px;
+    color: #870A30;
+    font-family: 'lora';
+    cursor:pointer;
+}
+
+
+.options {
+    display: flex;
+    flex-direction: row;
+    color: #870A30; 
+    align-items: right;
+    
+}
+
+.list {
+    width: 50%;
+    margin-left: auto;
+    list-style-type: none;
+    color: #870A30;
+}
+
+/*Hero section*/
+
+.heroImg {
+    height: 840px;
+    padding-top: 25px;
+
+    
+}
+
+.content {
+    display: grid;
+    z-index: 100;
+    position: absolute;
+    box-shadow: 5px 5px 5px rgb(72, 72, 72, 0.6);
+    width: 360px;
+    height: 160px;
+    margin-left: 630px;
+    margin-top: 460px;
+    background-color: #FAD2E0; 
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 18% 82%;
+    grid-template-areas: 
+        "emailIimg email"
+        "phoneImg phone"
+        "linkImg link";
+
+}
+
+.emailImg, .phoneImg, .linkImg {
+    width: 40px;
+    height: 40px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    padding-left: 18px;
+}
+
+
+.email {
+    font-size: 20px;
+    font-family: 'lato';   
+}
+
+.phone {
+    font-size: 20px;
+    font-family: 'lato';
+}
+
+.link {
+    font-size: 20px;
+    font-family: 'lato';
+}
+
+.content p {
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+
+.selfiebox {
+    display: flex;  
+    flex-wrap: wrap;
+    z-index: -1;
+    margin-left: 10%;
+    margin-top: 6.5%;
+}
+
+.seflie {
+    width: 602px;
+    height: 300px;
+    margin-left: 155px;
+    background-color: green;
+    margin-top: 20px;
+}
+
+.rolebox {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    margin-left: 155px;
+    width: 1000px;
+}
+
+
+.role {
+    font-size: 96px;
+    font-family: 'Lora', serif;
+    margin-left: 208px;
+    font-style: italic;
+    height: 110px;
+    color: #870A30;
+
+}
+
+.designValue {
+    font-size: 96px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    padding-left: 600px;
+    height: 110px;
+    color: #FFF2F2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #870A30;
+}
+
+.rolebox b {
+    padding-bottom: 1px;
+}
+
+.colourBlock {
+    z-index: -1;
+    height: 250px;
+    background-color: #870A30;
+    margin-top: -125px;
+    margin-left: 0%;
+}
+
+/*footer*/
+#foot{
+    display: grid;
+    width: 100%;
+    height: 120px;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+        "f1 f2 f2"
+        "f3 f4 f4"
+        "f5 f6 f6"
+        "f7 f7 f8";
+}
+
+.f1 {
+    grid-area: f1;
+    margin-left: 30%;
+}
+
+.f2 {
+    grid-area: f2;
+}
+
+.f3 {
+    grid-area: f3;
+    margin-left: 30%;
+}
+
+.f4 {
+    grid-area: f4;
+}
+
+.f5 {
+    grid-area: f5;
+    margin-left: 30%;
+}
+
+.f6 {
+    grid-area: f6;
+}
+
+.f7 {
+    grid-area: f7;
+    margin-left: 15%;
+
+}
+
+.f8 {
+    grid-area: f8;
+    padding-bottom: 70px;
+    text-align: right;
+    font-family: 'lato';
+    font-size: 14x;
+    margin-right: 30%;
+}
+
+.f1, .f2, .f3, .f4, .f5, .f6, .f7 {
+    text-align: left;
+    padding-bottom: 70px;
+    font-family: 'lato';
+    font-size: 18px;
+}
+
+
+
+
