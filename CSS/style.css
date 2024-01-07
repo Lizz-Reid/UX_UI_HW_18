@@ -10,6 +10,7 @@ body {
     margin-left: 1.8%;
     align-items: center;
     height: 60px;
+
 }
 
 .logo {
@@ -26,7 +27,7 @@ body {
     width: 70%;
 }
 
-ul {
+.options ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -66,10 +67,8 @@ ul {
 /*Hero section*/
 
 .heroImg {
-    height: 840px;
-    padding-top: 25px;
-
-    
+    height: 760px;
+    padding-top: 25px;    
 }
 
 .content {
@@ -82,6 +81,7 @@ ul {
     margin-left: 630px;
     margin-top: 460px;
     background-color: #FAD2E0; 
+    background-image: url('/UX_UI_HW_18/Images/Pattern2.png');
     grid-template-rows: 33% 33% 33%;
     grid-template-columns: 18% 82%;
     grid-template-areas: 
@@ -133,7 +133,6 @@ ul {
     width: 602px;
     height: 300px;
     margin-left: 155px;
-    background-color: green;
     margin-top: 20px;
 }
 
@@ -180,11 +179,216 @@ ul {
     margin-left: 0%;
 }
 
+/*About Me section*/
+
+#about {
+    display: flex;
+    flex-direction: row;
+    height: 680px;
+    width: 100%;
+
+}
+
+#about p {
+        font-size: 20px;
+        font-family: 'Lato';
+    }
+
+.tools p {
+    text-align: center;
+}
+.tools ul {
+    font-size: 20px;
+    font-family: 'Lato';
+    padding-left: 84px;
+}
+.intro {
+    width: 555px;
+    padding-left: 155px;
+    margin-top: 100px;
+}
+
+.tools {
+    width: 547px;
+    background-color: #FAD2E0;
+    box-shadow: 5px 5px 5px rgb(72, 72, 72, 0.6);
+    margin-right: 135px;
+    margin-left: 48px;
+    margin-top: 100px;
+    height: 550px;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    margin: 0%;
+    width: 450px;
+    padding: 0%;
+}
+
+h2 {
+    font-size: 64px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    text-align: center;
+}
+/*Skills*/
+
+#skills {
+    height: 580px;
+    margin-top: 0%;
+    background-image: url('/UX_UI_HW_18/Images/Pattern.png');
+}
+
+.skillsBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.skill1, .skill2, .skill3 {
+    font-family: 'lato';
+    width: 295px;
+}
+.skillsBlock p {
+    text-align: left;
+    margin: 0%;
+    font-family: 'lato';
+    font-size: 20px;
+}
+
+.skill1 {
+    padding-left: 120px;
+}
+
+.skill3 {
+    padding-right: 120px;
+}
+#skills h2 {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0%;
+    margin-left: 155px;
+}
+
+#skills h4 {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    width: 80px;
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+/*Projects*/
+
+.projectBox {
+    width: 900px;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 13% 20% 13% 20% 13% 20% ; 
+    grid-template-columns: 3% 37% 60%; 
+    margin-left: 20%;
+  }
+  
+  .projects h2 {
+    text-align: left;
+    margin-left: 155px;
+  }
+  /*item list*/
+
+  .p1colourBlock {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+  .p1Img {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+  }
+  .p1H {
+    grid-row: 1 / 2; 
+    grid-column: 3 / 4; 
+  }
+  .p1P {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+  .p2colourBlock {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+  }
+  .p2Img {
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+  }
+  .p2H {
+    grid-row: 3 / 4; 
+    grid-column: 3 / 4; 
+  }
+  .p2P {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+  }
+  .p3colourBlock {
+    grid-row: 5 / 7;
+    grid-column: 1 / 2;
+  }
+  .p3Img {
+    grid-row: 5 / 7;
+    grid-column: 2 / 3;
+  }
+  .p3H {
+    grid-row: 5 / 6; 
+    grid-column: 3 / 4; 
+  }
+  .p3P {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+  }
+
+.p1Img, .p2Img, .p3Img {
+    height: 226px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.p1H, .p2H, .p3H {
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    font-family: 'lora';
+    font-size: 20px;
+    margin-left: 20px;
+}
+.p1P, .p2P, .p3P {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    font-family: 'lato';
+    font-size: 20px;
+    margin-left: 20px;
+}
+.p1I, .p2I, .p3I {
+    height: 226px;
+    
+}
+.p1colourBlock, .p2colourBlock, .p3colourBlock {
+    height: 226px;
+    background-color: #FAD2E0;
+}
+
 /*footer*/
 #foot{
     display: grid;
     width: 100%;
     height: 120px;
+    padding-top: 80px;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas: 
@@ -194,6 +398,7 @@ ul {
         "f7 f7 f8";
 }
 
+    /*item list*/
 .f1 {
     grid-area: f1;
     margin-left: 30%;
