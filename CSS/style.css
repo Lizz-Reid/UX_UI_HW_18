@@ -173,7 +173,7 @@ body {
 .colourBlock {
     z-index: -1;
     height: 250px;
-    background-color: #870A30;
+    background-color: #BB2251;
     margin-top: -125px;
     margin-left: 0%;
 }
@@ -312,7 +312,7 @@ h2 {
   .colourBlock2 {
     z-index: -1;
     height: 250px;
-    background-color: #870A30;
+    background-color: #BB2251;
     margin-top: -200px;
     margin-left: 0%;
 }
@@ -471,6 +471,7 @@ h2 {
 @media only screen and (max-width: 600px) {
     
     body {
+
     }
 
     .menu {
@@ -610,7 +611,7 @@ h2 {
         padding-right: 0px;
         margin-left: 10px;
         height: 34px;
-        background-color: #870A30;
+        background-color: #BB2251;
         border-radius: 0px 15px 15px 0px ;
         margin-top: -150px;
     }
@@ -666,7 +667,7 @@ h2 {
   .colourBlock2 {
     z-index: -1;
     height: 250px;
-    background-color: #870A30;
+    background-color: #BB2251;
     margin-top: -300px;
     width: 100%;
 }
@@ -726,5 +727,48 @@ h2 {
 .p1colourBlock, .p2colourBlock, .p3colourBlock {
     height: 226px;
     background-color: #FAD2E0;
+}
+/*footer*/
+#foot{
+    display: grid;
+    width: 100%;
+    height: 70px;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "f1 f3"
+        "f5 f7"
+        "f8 f8";
+    background-color: aquamarine;
+}
+
+    /*item list*/
+
+.f2, .f4, .f6 {
+    display: none;
+}
+
+.f8 {
+    padding-bottom: 20px;
+    text-align: right;
+    width: 100%;
+    font-size: 14px;
+    background-color: #870A30;
+    border-color: #BB2251;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.f1, .f3, .f5, .f7 {
+    text-align: center;
+    font-size: 14px;
+    background-color: #870A30;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4%;
+    margin-left: 0px;
+    border-color: #BB2251;
+    border-style: solid;
+    border-width: 2px;
 }
 }
