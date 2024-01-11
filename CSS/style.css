@@ -69,7 +69,8 @@ body {
 
 .heroImg {
     height: 680px;
-    padding-top: 1%; 
+    display: grid;
+    justify-content: center;
 }
 
 .content {
@@ -79,8 +80,8 @@ body {
     box-shadow: 5px 5px 5px rgb(72, 72, 72, 0.6);
     width: 320px;
     height: 140px;
-    margin-left: 50%;
-    margin-top: 29%;
+    margin-left: 48%;
+    top: 440px;
     background-color: #FAD2E0; 
     background-image: url('/UX_UI_HW_18/Images/Pattern2.png');
     grid-template-rows: 33% 33% 33%;
@@ -127,21 +128,9 @@ body {
 
 .selfiebox {
     z-index: -1;
-    margin-left: 18%;
-    margin-top: 3%;
-}
-
-
-
-.rolebox {
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    position: absolute;
-    margin-left: 155px;
-    width: 1000px;
-}
-
+    margin-top: -55%;
+    margin-left: 4%;
+} 
 
 .role {
     font-size: 80px;
@@ -155,10 +144,11 @@ body {
 }
 
 .designValue {
+    display: flex;
     font-size: 80px;
     font-family: 'Lora', serif;
     font-style: italic;
-    padding-left: 580px;
+    padding-left: 62%;
     height: 100px;
     color: #FFF2F2;
     -webkit-text-stroke-width: 1px;
@@ -171,12 +161,14 @@ body {
 }
 
 .colourBlock {
-    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 450px;
+    width: 100%;
     height: 250px;
     background-color: #BB2251;
-    margin-top: -125px;
-    margin-left: 0%;
-}
+    z-index: -10;
+  }
 
 
 
@@ -184,9 +176,11 @@ body {
 
 #about {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    height: 680px;
+    height: auto;
     width: 100%;
+    margin-top: -50px;
 }
 
 
@@ -204,8 +198,7 @@ body {
     padding-left: 84px;
 }
 .intro {
-    width: 375px;
-    padding-left: 185px;
+    width: 30%;
     margin-top: 100px;
 }
 
@@ -213,8 +206,7 @@ body {
     width: 417px;
     background-color: #FAD2E0;
     box-shadow: 5px 5px 5px rgb(72, 72, 72, 0.6);
-    margin-right: 135px;
-    margin-left: 48px;
+    margin-left: 10%;
     margin-top: 100px;
     height: 450px;
 }
@@ -226,6 +218,7 @@ h1 {
     margin: 0%;
     width: 450px;
     padding: 0%;
+    color: #870A30;
 }
 
 h2 {
@@ -233,6 +226,7 @@ h2 {
     font-family: 'Lora', serif;
     font-style: italic;
     text-align: center;
+    color: #870A30;
 }
 /*Skills*/
 
@@ -290,32 +284,40 @@ h2 {
 /*Projects*/
 
 .projects {
-    height: 1000px;
-    width: auto;
+    display: flex;
+    height: 720px;
+ 
 }
 
 .projectBox {
-    width: 900px;
-    height: 800px;
+    min-width: 700px;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    padding-top: 8%;
     display: grid;
-    grid-template-rows: 13% 20% 13% 20% 13% 20% ; 
-    grid-template-columns: 3% 37% 60%; 
-    margin-left: 20%;
+    grid-template-rows: 10% 23% 10% 23% 10% 23% ; 
+    grid-template-columns: 3% 30% 67%; 
     z-index: 100;
+ 
   }
   
   .projects h2 {
     text-align: left;
     margin-left: 155px;
+    margin-right: 2%;
+    
   }
 
   .colourBlock2 {
-    z-index: -1;
+    display: flex;
+    position: absolute;
+    margin-top: 520px;
+    width: 100%;
     height: 250px;
     background-color: #BB2251;
-    margin-top: -200px;
-    margin-left: 0%;
-}
+    z-index: -10;
+} 
   /*item list*/
 
   .p1colourBlock {
@@ -368,7 +370,8 @@ h2 {
   }
 
 .p1Img, .p2Img, .p3Img {
-    height: 226px;
+    height: auto;
+    margin-bottom: 4px;
     background-color: white;
     width: 100%;
     display: flex;
@@ -377,26 +380,25 @@ h2 {
 }
 .p1H, .p2H, .p3H {
     height: auto;
-    width: 100%;
     margin-top: 0px;
     font-family: 'lora';
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 20px;
 }
 .p1P, .p2P, .p3P {
     height: auto;
-    width: 100%;
+    width: 97%;
     text-align: left;
     font-family: 'lato';
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 20px;
 }
 .p1I, .p2I, .p3I {
-    height: 226px;
+    height: 161px;
     
 }
 .p1colourBlock, .p2colourBlock, .p3colourBlock {
-    height: 226px;
+    margin-bottom: 4px;
     background-color: #FAD2E0;
 }
 
@@ -414,6 +416,7 @@ h2 {
         "f5 f6 f6"
         "f7 f7 f8";
 }
+
 
     /*item list*/
 .f1 {
@@ -499,7 +502,8 @@ h2 {
     }
 
     .content {
-        margin-top: 38%;
+        margin-top: -160px;
+        margin-left: 50%;
         width: 40%;
         background-image: none;
         background-color: rgb(72, 72, 72, 0.0);
@@ -533,20 +537,20 @@ h2 {
     
     .role {
         font-size: 28px;
-        margin-left: 128px;
+        margin-left: 148px;
         height: 80px;
         margin-top: 10px;
     }
     
     .designValue {
         font-size: 28px;
-        padding-left: 250px;
+        padding-left: 270px;
         height: 60px;
         margin-top: -20px;
     }
     .colourBlock {
         height: 64px;
-        margin-top: -155px;
+        margin-top: -140px;
     }
 /*About Me section*/
     #about {
@@ -647,6 +651,7 @@ h2 {
     width: 100%;
     margin-left: 50%;
     transform: translate(-50%);
+    background-color: green;
 }
 
 .projectBox {
@@ -666,9 +671,9 @@ h2 {
 
   .colourBlock2 {
     z-index: -1;
-    height: 250px;
+    height: 64px;
     background-color: #BB2251;
-    margin-top: -300px;
+    margin-top: 100 px;
     width: 100%;
 }
   /*item list*/
@@ -731,9 +736,10 @@ h2 {
 /*footer*/
 #foot{
     display: grid;
+    margin-top: -20%;
     width: 100%;
     height: 70px;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 50% 50%  ;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
         "f1 f3"
@@ -748,7 +754,7 @@ h2 {
     display: none;
 }
 
-.f8 {
+/* .f8 {
     padding-bottom: 20px;
     text-align: right;
     width: 100%;
@@ -757,15 +763,15 @@ h2 {
     border-color: #BB2251;
     border-style: solid;
     border-width: 2px;
-}
+}  */
 
 .f1, .f3, .f5, .f7 {
-    text-align: center;
+    /* text-align: center;
     font-size: 14px;
     background-color: #870A30;
     width: 100%;
-    height: 100%;
-    padding-bottom: 4%;
+    margin-bottom: 20px; */
+
     margin-left: 0px;
     border-color: #BB2251;
     border-style: solid;
